@@ -7,46 +7,48 @@
     <title>Starwars RPG</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./assets/javascript/game.js" ></script>
 </head>
 <body>
     <div class="header">
         <h1>Star Wars RPG!</h1>
     </div>
-    <div class="user-select">
-        <h1 class="menu-text">User Selection:</h1>
-        <div class="fighters">
-            <h3>Boba Fett</h3>
+    <h1 class="menu-text">User Selection:</h1>
+    <div id="user-select">
+        <div class="fighters hero-btn" id="fighter-1">
+            <h3 class="fighter-name">Boba Fett</h3>
             <img src="./assets/images/bf.png" alt="Boba Fett">
-            <h3 id="fighter-bf">200</h3>
+            <h3 class="fighter-health" data-health="170">170</h3>
         </div>
-        <div class="fighters">
-            <h3>Chewbacca</h3>
+        <div class="fighters  hero-btn" id="fighter-2">
+            <h3 class="fighter-name">Chewbacca</h3>
             <img src="./assets/images/cb.png" alt="Chewbacca">
-            <h3 id="fighter-cb">250</h3>
+            <h3 class="fighter-health" data-health="180">180</h3>
         </div>
-        <div class="fighters">
-            <h3>Darth Vader</h3>
+        <div class="fighters  hero-btn" id="fighter-3">
+            <h3 class="fighter-name">Darth Vader</h3>
             <img src="./assets/images/dv.png" alt="Darth Vader">
-            <h3 id="fighter-dv">230</h3>
+            <h3 class="fighter-health" data-health="150">150</h3>
         </div>
-        <div class="fighters">
-            <h3>R2D2</h3>
+        <div class="fighters  hero-btn" id="fighter-4">
+            <h3 class="fighter-name">R2D2</h3>
             <img src="./assets/images/r2.png" alt="R2D2">
-            <h3 id="fighter-r2">175</h3>
+            <h3 class="fighter-health" data-health="180">180</h3>
         </div>
     </div>
-    <div class="enemy-select">
-        <h1 class="menu-text">Enemy Selection:</h1>
-    </div>
-    <div class="fight-selection">
-        <h1 class="menu-text">Chosen Fighter:</h1>
-    </div>
-    <div class="fight"><button id ="fight-btn">Fight!</button></div>
-    <h1 class="menu-text">Battle HUD:</h1>
-    <div class="battle-stats">
+    <h1 class="menu-text">Enemy Selection:</h1>
+    <div id="enemy-select"></div>
 
+    <h1 class="menu-text">Chosen Fighter:</h1>
+    <div id="fight-selection"></div>
+
+    <div class="fight">
+        <button class ="buttons" id ="fight-btn">Fight!</button>
+        <button class ="buttons" id ="reset-btn">Play Again!</button
     </div>
+    
+    <h1 class="menu-text">Battle HUD:</h1>
+    <div id="battle-stats"></div>
 </body>
 </html>

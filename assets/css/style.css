@@ -16,7 +16,22 @@ html {
 }
 
 .fighters {
-    background-color: white;
+    background-color: lightgreen;
+}
+
+.enemies {
+    background-color: lightblue;
+}
+
+.fighter {
+    background-color: lightcoral;
+}
+
+.not-in-play {
+    background-color: black;
+}
+
+.hero-btn {
     border: 2px solid gray;
     display:inline-block;
     text-align: center;
@@ -24,31 +39,39 @@ html {
     width: 150px;
 }
 
-.fighters img {
+.hero-btn:hover {
+    background-color: gray; 
+}
+
+img {
     width: 75%;
     height: 75%;
 }
 
-.fighters:hover {
-    background-color: gray;
-}
-
-#fight-btn {
+.buttons {
     font-size: 25px;
     background-color: white;
     border: 2px solid lightgray;
     border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-#fight-btn:hover {
+.buttons:hover {
     background-color: lightgray;
     border: 2px solid lightgray;
     border-radius: 2px;
 }
 
-.battle-stats {
+#battle-stats {
     width: 620px;
     height: 150px;
     border: 2px solid white;
     background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+#reset-btn {
+    display: none;
 }
