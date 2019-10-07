@@ -9,7 +9,6 @@ html {
     font-size: 50px;
 }
 
-
 .menu-text {
     color: white;
     font-size: 35px;
@@ -27,9 +26,6 @@ html {
     background-color: lightcoral;
 }
 
-.not-in-play {
-    background-color: black;
-}
 
 .hero-btn {
     border: 2px solid gray;
@@ -41,6 +37,14 @@ html {
 
 .hero-btn:hover {
     background-color: gray; 
+}
+
+.not-in-play {
+    background-color: black;
+}
+
+.not-in-play:hover {
+    background-color: black;
 }
 
 img {
